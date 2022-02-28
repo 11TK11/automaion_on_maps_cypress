@@ -65,11 +65,10 @@ describe("hover on positions", () => {
 				.invoke('text').then((text) => {
 												console.log(key,text+ ' ' +value['price']);
 												cy.softContains(text, value['price'], "expected actual mismatch");
-												cy.log('text'); 
 				});
 				// to hide tooltip
-				cy.wrap($canvas).trigger('mousedown', buttonX*2, buttonY*2)
-				cy.wrap($canvas).trigger('mouseup', buttonX*2, buttonY*2)
+				cy.wrap($canvas).trigger('mousedown', buttonX, buttonY)
+				cy.wrap($canvas).trigger('mouseup', buttonX, buttonY)
 				
 			}
 			cy.softAssertAll(); 
