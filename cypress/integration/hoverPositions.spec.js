@@ -35,7 +35,7 @@ describe("hover on positions", () => {
 
     it('should hover various hoteles', () => {
 		var hotels = {
-			'OYO 84907 Sri Fortune Blizz': {x:(8-1)/8,y:(12-8)/12, price:'136'},
+			'OYO 84907 Sri Fortune Blizz': {x:(8-1)/8,y:(12-8)/12, price:'136'},//divide in 8 section from middle and move to 1 section up for x
 			'OYO 13162 Swiss Legrand':{x:(20-1)/20,y:(10-1)/10, price:'94'},
 			'OYO 45138 Hady Inn':{x:(10-2)/10,y:(14-8)/14, price:'91'}
 		};
