@@ -5,5 +5,8 @@
   },
   "scripts": {
     "cypress:open": "cypress open"
+  },
+  "dependencies": {
+    "soft-assert": "^0.2.6"
   }
 }
