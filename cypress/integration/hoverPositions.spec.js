@@ -43,7 +43,7 @@ describe("hover on positions", () => {
 		cy.get('#searchbox-searchbutton').click();
 		cy.xpath('(//div[@aria-label="Resultados de Hoteles"]//div//div//a)[2]')
 		
-		cy.xpath('//*[@id="pane"]/div/div[3]/button/img').wait(5000).click();
+		cy.xpath('//*[@id="pane"]/div/div[3]/button/img').wait(5000).click();  //collapse menu
 	    cy.get('canvas')
 	    .wait(5000)
 	  
