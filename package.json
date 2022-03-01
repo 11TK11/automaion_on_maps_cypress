@@ -7,6 +7,7 @@
     "cypress:open": "cypress open"
   },
   "dependencies": {
+    "cypress-visual-regression": "^1.6.3",
     "soft-assert": "^0.2.6"
   }
 }
