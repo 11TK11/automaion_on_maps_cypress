@@ -3,6 +3,7 @@ describe("hover on positions", () => {
     cy.visit('https://www.google.co.in/maps/@17.4729197,78.3650622,15z');
   });
 
+  // just a comment
   it('should hover displays hotel details', () => {
 	  cy.get('canvas')
 	  .wait(10000)
