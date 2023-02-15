@@ -3,8 +3,8 @@ describe("hover on positions", () => {
       cy.visit('https://www.google.co.in/maps/@17.4729197,78.3650622,15z')
     });
     
-    it('should hover displayed restaurant using menu', () => {       
-        cy.get('#searchbox').wait(5000).type('Restaurantes');
+    it('shodisplayed restaurant using menu', () => {       
+        cy.get('#searchbox').wait(5000).type('Restaurante');
 		    cy.get('#searchbox-searchbutton').click();
         cy.wait(10000);
         cy.xpath('//*[@id="pane"]/div/div[1]/div/div/div[2]/div[1]/div/div').find('a')
