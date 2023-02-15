@@ -6,7 +6,6 @@ describe("hover on positions", () => {
     it('should hover displayed restaurant using menu', () => {       
         cy.get('#searchbox').wait(5000).type('Restaurantes');
 		    cy.get('#searchbox-searchbutton').click();
-        cy.wait(5000);
         cy.xpath('//*[@id="pane"]/div/div[1]/div/div/div[2]/div[1]/div/div').find('a')
         .each(($item) => {
           if($item.attr('aria-label')!='IKEA Restaurant' && $item.attr('aria-label')!='Al Zaara Matbaq Al Mandi')
